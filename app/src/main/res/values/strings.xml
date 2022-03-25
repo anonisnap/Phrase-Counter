@@ -1,0 +1,23 @@
+<resources>
+	<string name = "app_name">Phrase Counter</string>
+	<string name = "navigation_drawer_open">Open navigation drawer</string>
+	<string name = "navigation_drawer_close">Close navigation drawer</string>
+	<string name = "nav_header_title">Phrase Counter</string>
+	<string name = "nav_header_subtitle">Counting specific phrases?</string>
+	<string name = "nav_header_desc">Navigation header</string>
+	<string name = "action_settings">Not Yet Implemented</string>
+
+	<string name = "menu_home">Home</string>
+	<string name = "menu_teacher_click">Count phrases</string>
+	<string name = "menu_teacher_list">Leaderboards</string>
+	<string name = "menu_add_more_phrases">Need more phrases?</string>
+	<string name = "hint_course">Course</string>
+	<string name = "hint_teacher_name">Person\'s Name</string>
+	<string name = "hint_phrase">Phrase</string>
+	<string name = "btn_add_phrase">Add Phrase</string>
+	<string name = "phrase_add_confirm">Phrase added</string>
+	<string name = "btn_count_up">Count up</string>
+	<string name = "default_course">Course</string>
+	<string name = "default_name">Name</string>
+	<string name = "default_phrase">Phrase</string>
+</resources>

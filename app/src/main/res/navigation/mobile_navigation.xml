@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android = "http://schemas.android.com/apk/res/android"
+			xmlns:app = "http://schemas.android.com/apk/res-auto"
+			xmlns:tools = "http://schemas.android.com/tools"
+			android:id = "@+id/mobile_navigation"
+			app:startDestination = "@+id/nav_home">
+
+	<fragment
+			android:id = "@+id/nav_home"
+			android:name = "com.github.anonisnap.phrasecounter.ui.home.HomeFragment"
+			android:label = "@string/menu_home"
+			tools:layout = "@layout/fragment_home" >
+	</fragment>
+
+	<fragment
+			android:id = "@+id/nav_click_on_teachers"
+			android:name = "com.github.anonisnap.phrasecounter.ui.clickonteachers.ClickOnTeachersFragment"
+			android:label = "@string/menu_teacher_click"
+			tools:layout = "@layout/fragment_click_on_teachers" />
+
+	<fragment
+			android:id = "@+id/nav_add_more"
+			android:name = "com.github.anonisnap.phrasecounter.ui.addnewphrase.AddNewPhraseFragment"
+			android:label = "@string/menu_add_more_phrases"
+			tools:layout = "@layout/fragment_add_new_phrase" />
+
+	<fragment
+			android:id = "@+id/nav_leaderboard_list"
+			android:name = "com.github.anonisnap.phrasecounter.ui.leaderboard.LeaderboardFragment"
+			android:label = "@string/menu_teacher_list"
+			tools:layout = "@layout/fragment_leaderboard_list" />
+</navigation>
