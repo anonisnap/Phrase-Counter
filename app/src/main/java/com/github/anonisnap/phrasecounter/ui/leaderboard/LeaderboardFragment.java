@@ -33,8 +33,13 @@ public class LeaderboardFragment extends Fragment {
 
 	private void onChanged(List<Phrase> phrases) {
 		TeacherPhraseAdapter adapter = new TeacherPhraseAdapter(phrases);
-		adapter.setOnClickListener(phrase -> Snackbar.make(binding.leaderboardView, phrase.toString(), Snackbar.LENGTH_SHORT).show());
+		adapter.setOnClickListener(this::onPhraseClicked);
 		binding.leaderboardView.setAdapter(adapter);
+	}
+
+	private void onPhraseClicked(Phrase phrase) {
+		
+		Snackbar.make(binding.leaderboardView, phrase.toString(), Snackbar.LENGTH_SHORT).show();
 	}
 
 	@Override
