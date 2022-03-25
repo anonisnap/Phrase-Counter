@@ -16,10 +16,11 @@ This application is created with the intent, of allowing people to add a phrase 
 
 ### Functionality
 - [x] Add a new Course, Person, and Phrase
+- [ ] Ability to remove a Phrase
 - [x] View leaderboards over People and their Phrases
 - [ ] Click on Leaderboard to access the specific Counter for that Phrase
 - [x] Store things locally in SQLite Database
-
+- [ ] Navigation between pages
 
 ## Possible Additions
 
