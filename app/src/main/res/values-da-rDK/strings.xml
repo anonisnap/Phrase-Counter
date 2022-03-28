@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name = "navigation_drawer_open">Åben navigations skuffe</string>
+	<string name = "navigation_drawer_close">Luk navigations skuffe</string>
+	<string name = "nav_header_title">Udtalelses Tæller</string>
+	<string name = "nav_header_subtitle">Tæller du udtalelser?</string>
+	<string name = "nav_header_desc">Navigations hovede</string>
+	<string name = "action_settings">Endnu ikke implementeret</string>
+	<string name = "menu_home">Hjem</string>
+	<string name = "menu_teacher_click">Tæl Udtalelser</string>
+	<string name = "menu_teacher_list">Rankliste</string>
+	<string name = "menu_add_more_phrases">Tilføj flere udtalelser</string>
+	<string name = "hint_course">Kursus</string>
+	<string name = "hint_teacher_name">Persons Navn</string>
+	<string name = "hint_phrase">Udtalelse</string>
+	<string name = "btn_add_phrase">Tilføj Udtalelse</string>
+	<string name = "phrase_add_confirm">Udtalelse Tilføjet</string>
+	<string name = "btn_count_up">Tæl op</string>
+	<string name = "default_course">Kursus</string>
+	<string name = "default_name">Navn</string>
+	<string name = "default_phrase">Udtalelse</string>
+	<string name = "home_welcome">Velkommen til Udtalelses Tælle Appen! Denne Applikation er lavet til at hjælpe dig, med at holde styr på hvor ofte nogle mennesker siger en bestemt udtalelse</string>
+	<string name = "count">Antal</string>
+	<string name = "app_name">Udtalelses Tæller</string>
+</resources>

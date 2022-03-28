@@ -21,4 +21,5 @@
 	<string name = "default_name">Name</string>
 	<string name = "default_phrase">Phrase</string>
 	<string name = "home_welcome">Welcome to the Phrase Counting App!\nThis Application is meant to help you keep track of how often people may say specific phrases</string>
+	<string name = "count">Count</string>
 </resources>
