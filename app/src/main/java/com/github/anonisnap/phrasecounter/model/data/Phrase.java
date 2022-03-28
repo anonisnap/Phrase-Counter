@@ -58,10 +58,6 @@ public class Phrase implements Serializable {
 		return timesSaid;
 	}
 
-	public void setTimesSaid(int timesSaid) {
-		this.timesSaid = timesSaid;
-	}
-
 	@NotNull
 	@Override
 	public String toString() {

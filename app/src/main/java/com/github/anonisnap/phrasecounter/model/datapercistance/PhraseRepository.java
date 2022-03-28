@@ -58,7 +58,7 @@ public class PhraseRepository {
 	/**
 	 * Removes all Phrases in the local Storage
 	 */
-	public void deleteAllNotes() {
+	public void deleteAllPhrases() {
 		executorService.execute(phraseDao::deleteAllPhrases);
 	}
 
