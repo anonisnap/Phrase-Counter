@@ -25,7 +25,7 @@ public class TeacherPhraseAdapter extends RecyclerView.Adapter<TeacherPhraseAdap
 	@Override
 	public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 		LayoutInflater inf = LayoutInflater.from(parent.getContext());
-		View view = inf.inflate(R.layout.leaderboard_list_item, parent, false);
+		View view = inf.inflate(R.layout.list_card_leaderboard, parent, false);
 		return new ViewHolder(view);
 	}
 
