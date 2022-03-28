@@ -8,8 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.github.anonisnap.phrasecounter.R;
 import com.github.anonisnap.phrasecounter.databinding.FragmentLeaderboardListBinding;
 import com.github.anonisnap.phrasecounter.model.data.Phrase;
 import com.google.android.material.snackbar.Snackbar;
@@ -38,8 +41,17 @@ public class LeaderboardFragment extends Fragment {
 	}
 
 	private void onPhraseClicked(Phrase phrase) {
-		
+		// SNACKBAR IS LOVE, SNACKBAR IS LIFE
 		Snackbar.make(binding.leaderboardView, phrase.toString(), Snackbar.LENGTH_SHORT).show();
+
+		// Navigating to a different Fragment
+		// Create a Bundle to send data
+		Bundle bundle = new Bundle();
+		// Fill bundle with Data
+		bundle.putSerializable("phrase", phrase);
+		System.out.println(bundle.getSerializable("phrase").toString());
+		// Navigate with the bundle attached
+		NavHostFragment.findNavController(this).navigate(R.id.action_nav_leaderboard_list_to_nav_click_to_count, bundle);
 	}
 
 	@Override

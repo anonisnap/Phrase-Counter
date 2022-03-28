@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase;
 
 import com.github.anonisnap.phrasecounter.model.data.Phrase;
 
-@androidx.room.Database(entities = {Phrase.class}, version = 1)
+@androidx.room.Database(entities = {Phrase.class}, version = 2)
 public abstract class PhraseDatabase extends RoomDatabase {
 	private static PhraseDatabase instance;
 

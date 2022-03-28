@@ -30,6 +30,7 @@ public class PhraseRepository {
 
 	/**
 	 * Access to Singleton Class, PhraseRepository.
+	 *
 	 * @param application Base Application of the process
 	 * @return Instance of Singleton class, PhraseRepository
 	 */
@@ -47,6 +48,7 @@ public class PhraseRepository {
 
 	/**
 	 * Inserts a new Phrase into local Storage
+	 *
 	 * @param phrase Phrase to be added
 	 */
 	public void insert(Phrase phrase) {
@@ -58,5 +60,14 @@ public class PhraseRepository {
 	 */
 	public void deleteAllNotes() {
 		executorService.execute(phraseDao::deleteAllPhrases);
+	}
+
+	/**
+	 * Update existing Phrase by parsing a new Phrase with matching ID
+	 *
+	 * @param updatedPhrase Updated Phrase. Phrase with Matching ID will be updated
+	 */
+	public void updatePhrase(Phrase updatedPhrase) {
+		executorService.execute(() -> phraseDao.update(updatedPhrase));
 	}
 }

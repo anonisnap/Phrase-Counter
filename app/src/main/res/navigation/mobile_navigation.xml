@@ -9,14 +9,17 @@
 			android:id = "@+id/nav_home"
 			android:name = "com.github.anonisnap.phrasecounter.ui.home.HomeFragment"
 			android:label = "@string/menu_home"
-			tools:layout = "@layout/fragment_home" >
-	</fragment>
+			tools:layout = "@layout/fragment_home" />
 
 	<fragment
-			android:id = "@+id/nav_click_on_teachers"
-			android:name = "com.github.anonisnap.phrasecounter.ui.clickonteachers.ClickOnTeachersFragment"
+			android:id = "@+id/nav_click_to_count"
+			android:name = "com.github.anonisnap.phrasecounter.ui.clickonteachers.ClickToCount"
 			android:label = "@string/menu_teacher_click"
-			tools:layout = "@layout/fragment_click_on_teachers" />
+			tools:layout = "@layout/fragment_click_to_count">
+		<argument
+				android:name = "phrase"
+				app:argType = "com.github.anonisnap.phrasecounter.model.data.Phrase" />
+	</fragment>
 
 	<fragment
 			android:id = "@+id/nav_add_more"
@@ -28,5 +31,10 @@
 			android:id = "@+id/nav_leaderboard_list"
 			android:name = "com.github.anonisnap.phrasecounter.ui.leaderboard.LeaderboardFragment"
 			android:label = "@string/menu_teacher_list"
-			tools:layout = "@layout/fragment_leaderboard_list" />
+			tools:layout = "@layout/fragment_leaderboard_list">
+		<action
+				android:id = "@+id/action_nav_leaderboard_list_to_nav_click_to_count"
+				app:destination = "@id/nav_click_to_count" />
+
+	</fragment>
 </navigation>

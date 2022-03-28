@@ -1,6 +1,7 @@
 package com.github.anonisnap.phrasecounter.model.datapercistance;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -28,4 +29,7 @@ public interface PhraseDao {
 
 	@Query("SELECT * FROM phrase_count_table ORDER BY timesSaid DESC")
 	LiveData<List<Phrase>> getAllPhrases();
+
+	@Query("SELECT * FROM phrase_count_table WHERE id like :phrase_id")
+	Phrase getPhrase(int phrase_id);
 }

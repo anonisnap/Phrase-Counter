@@ -4,7 +4,7 @@
 												   xmlns:tools = "http://schemas.android.com/tools"
 												   android:layout_width = "match_parent"
 												   android:layout_height = "match_parent"
-												   tools:context = ".ui.clickonteachers.ClickOnTeachersFragment">
+												   tools:context = ".ui.clickonteachers.ClickToCount">
 
 	<!-- Count Up Button -->
 	<Button
@@ -23,7 +23,7 @@
 	<TextView
 			android:id = "@+id/txt_name"
 			android:text = "@string/default_name"
-			android:textSize="24sp"
+			android:textSize = "24sp"
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
 			app:layout_constraintStart_toStartOf = "@id/txt_course"
@@ -35,7 +35,7 @@
 	<TextView
 			android:id = "@+id/txt_course"
 			android:text = "@string/default_course"
-			android:textSize="24sp"
+			android:textSize = "24sp"
 			android:textStyle = "bold"
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
@@ -47,7 +47,7 @@
 	<TextView
 			android:id = "@+id/txt_count"
 			android:text = "0"
-			android:textSize="24sp"
+			android:textSize = "24sp"
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
 			app:layout_constraintEnd_toEndOf = "parent"
@@ -58,7 +58,7 @@
 	<TextView
 			android:id = "@+id/txt_phrase"
 			android:text = "@string/default_phrase"
-			android:textSize="24sp"
+			android:textSize = "24sp"
 			android:textStyle = "italic"
 			android:layout_height = "wrap_content"
 			android:layout_width = "wrap_content"
@@ -66,4 +66,5 @@
 			app:layout_constraintEnd_toEndOf = "parent"
 			app:layout_constraintTop_toBottomOf = "@id/txt_name"
 			android:layout_marginTop = "16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,26 +2,29 @@ package com.github.anonisnap.phrasecounter.model.data;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
 import java.util.Locale;
 
 @Entity(tableName = "phrase_count_table")
-public class Phrase {
+public class Phrase implements Serializable {
 	@PrimaryKey(autoGenerate = true)
 	private int id;
 
 	// Phrase Details
 	@NotNull
 	private final String phrase;
+	@NotNull
 	private final String course;
 	@NotNull
 	private final String nameOfPerson;
 	private int timesSaid;
 
-	public Phrase(@NonNull String phrase, @NonNull String nameOfPerson, String course, int timesSaid) {
+	public Phrase(@NonNull String phrase, @NonNull String nameOfPerson, @NonNull String course, int timesSaid) {
 		this.phrase = phrase;
 		this.nameOfPerson = nameOfPerson;
 		this.course = course;
@@ -41,6 +44,7 @@ public class Phrase {
 		return phrase;
 	}
 
+	@NonNull
 	public String getCourse() {
 		return course;
 	}
@@ -62,5 +66,9 @@ public class Phrase {
 	@Override
 	public String toString() {
 		return String.format(Locale.ENGLISH, "%s ~%s [%s] | x%d", phrase, nameOfPerson, course, timesSaid);
+	}
+
+	public void plusOne() {
+		timesSaid++;
 	}
 }
