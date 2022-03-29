@@ -34,7 +34,12 @@
 			tools:layout = "@layout/fragment_leaderboard_list">
 		<action
 				android:id = "@+id/action_nav_leaderboard_list_to_nav_click_to_count"
-				app:destination = "@id/nav_click_to_count" />
+				app:destination = "@id/nav_click_to_count"
+				app:enterAnim = "@anim/nav_default_enter_anim"
+				app:exitAnim = "@anim/nav_default_exit_anim"
+				app:popUpTo = "@id/nav_leaderboard_list"
+				app:popEnterAnim = "@anim/nav_default_pop_enter_anim"
+				app:popExitAnim = "@anim/nav_default_pop_exit_anim" />
 
 	</fragment>
 </navigation>
