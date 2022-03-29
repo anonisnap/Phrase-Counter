@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/drawable/gradient.xml" value="0.3825" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/drawable/ic_menu_home_24.xml" value="0.2095" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2095" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/drawable/side_nav_bar.xml" value="0.2095" />
@@ -14,6 +15,7 @@
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/layout/fragment_leaderboard_list.xml" value="0.5" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/layout/leaderboard_list_item.xml" value="0.67" />
+        <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/layout/list_card_leaderboard.xml" value="0.33" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/layout/nav_header_main.xml" value="0.3875" />
         <entry key="..\:/OneDrive - ViaUC/4 Semester/AND/FunProjects/TeacherCounter/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
       </map>
