@@ -41,9 +41,6 @@ public class LeaderboardFragment extends Fragment {
 	}
 
 	private void onPhraseClicked(Phrase phrase) {
-		// SNACKBAR IS LOVE, SNACKBAR IS LIFE
-		Snackbar.make(binding.leaderboardView, phrase.toString(), Snackbar.LENGTH_SHORT).show();
-
 		// Navigating to a different Fragment
 		// Create a Bundle to send data
 		Bundle bundle = new Bundle();
