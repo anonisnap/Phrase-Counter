@@ -10,7 +10,7 @@
 			android:visibility="gone"
 			class = "android.widget.LinearLayout"
 			android:layout_height = "match_parent"
-			android:layout_width = "80dp"
+			android:layout_width = "160dp"
 			android:background = "@drawable/gradient"/>
 
 		<androidx.constraintlayout.widget.ConstraintLayout
