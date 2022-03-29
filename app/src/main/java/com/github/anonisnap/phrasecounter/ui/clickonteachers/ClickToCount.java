@@ -18,7 +18,7 @@ import java.util.Locale;
 
 public class ClickToCount extends Fragment {
 	// Android Views
-	private ImageButton countUpButton;
+	private ImageButton countUpButton,countDownButton;
 	private TextView phraseText, courseText, nameText, currentCountText;
 
 	private ClickToCountViewModel viewModel;
@@ -43,8 +43,11 @@ public class ClickToCount extends Fragment {
 		return root;
 	}
 
+
+
 	private void bindViews() {
 		countUpButton = binding.btnCountUp;
+		countDownButton = binding.btnCountDown;
 		phraseText = binding.txtPhrase;
 		courseText = binding.txtCourse;
 		nameText = binding.txtName;
@@ -56,7 +59,8 @@ public class ClickToCount extends Fragment {
 		nameText.setText(phrase.getNameOfPerson());
 		courseText.setText(phrase.getCourse());
 		viewModel.getCount().observe(getViewLifecycleOwner(), count -> currentCountText.setText(String.format(Locale.ENGLISH, "x%d", count)));
-		countUpButton.setOnClickListener(view -> viewModel.addToCount());
+		countUpButton.setOnClickListener(view -> viewModel.countUp());
+		countDownButton.setOnClickListener(view -> viewModel.countDown());
 	}
 
 	@Override

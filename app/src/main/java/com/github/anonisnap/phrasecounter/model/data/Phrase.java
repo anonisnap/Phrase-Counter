@@ -2,7 +2,6 @@ package com.github.anonisnap.phrasecounter.model.data;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
-import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import org.jetbrains.annotations.NotNull;
@@ -64,7 +63,13 @@ public class Phrase implements Serializable {
 		return String.format(Locale.ENGLISH, "%s ~%s [%s] | x%d", phrase, nameOfPerson, course, timesSaid);
 	}
 
-	public void plusOne() {
+	public Phrase plusOne() {
 		timesSaid++;
+		return this;
+	}
+
+	public Phrase minusOne() {
+		timesSaid--;
+		return this;
 	}
 }

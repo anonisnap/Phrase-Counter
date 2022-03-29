@@ -29,9 +29,12 @@ public class ClickToCountViewModel extends AndroidViewModel {
 		return phrase;
 	}
 
-	public void addToCount() {
-		phrase.plusOne();
-		liveCount.setValue(phrase.getTimesSaid());
+	public void countUp() {
+		liveCount.setValue(phrase.plusOne().getTimesSaid());
+	}
+
+	public void countDown() {
+		liveCount.setValue(phrase.minusOne().getTimesSaid());
 	}
 
 	public void updateCount() {
